@@ -166,8 +166,23 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPrepare: function (config, capabilities) {
+        const figlet = require('figlet');
+        figlet.text('Custom Text!', {
+            font: 'Ghost', // cahnge this to your preferred font
+            horizontalLayout: 'default',
+            verticalLayout: 'default',
+            width: 90,
+            whitespaceBreak: true
+        }, function(err, data) {
+            if (err) {
+                console.log('Something went wrong...');
+                console.dir(err);
+                return;
+            }
+            console.log(data);
+        });
+    },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
