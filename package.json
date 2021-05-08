@@ -1,0 +1,20 @@
+{
+  "name": "wdio_ascii_art",
+  "version": "1.0.0",
+  "description": "WebdriverIO Framework with ASCII Art",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goveanick/wdioAsciiArt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goveanick/wdioAsciiArt/issues"
+  },
+  "homepage": "https://github.com/goveanick/wdioAsciiArt#readme"
+}
