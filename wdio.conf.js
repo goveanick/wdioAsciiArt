@@ -169,7 +169,7 @@ exports.config = {
     onPrepare: function (config, capabilities) {
         const figlet = require('figlet');
         figlet.text('Custom Text!', {
-            font: 'Ghost', // cahnge this to your preferred font
+            font: 'Colossal', // change this to your preferred font
             horizontalLayout: 'default',
             verticalLayout: 'default',
             width: 90,
